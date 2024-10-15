@@ -21,6 +21,8 @@ export const MainMenu = () => {
 const StyledMainMenu = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: bisque;
+    margin-bottom: 138px;
 `
 
 const Photo = styled.img`

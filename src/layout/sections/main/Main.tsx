@@ -7,12 +7,12 @@ import styled from "styled-components";
 export const Main = () => {
     return (
         <StyledMain>
-            <RightMenu/>
             <LeftMenu/>
             <div>
                 <MainMenu/>
                 <Services/>
             </div>
+            <RightMenu/>
         </StyledMain>
     )
 }
@@ -20,7 +20,7 @@ export const Main = () => {
 const StyledMain = styled.div`
     display: flex;
     :nth-child(1){
-        align-self: flex-end;
+        justify-content: flex-end;
     }
     :nth-child(2){
         align-self: flex-start;
@@ -30,5 +30,4 @@ const StyledMain = styled.div`
         flex-direction: column;
     }
     gap: 30px;
-
 `
