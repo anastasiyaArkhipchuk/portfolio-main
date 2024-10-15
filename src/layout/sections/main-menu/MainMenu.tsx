@@ -23,6 +23,9 @@ const StyledMainMenu = styled.div`
     grid-template-columns: 1fr 1fr;
     background-color: bisque;
     margin-bottom: 138px;
+    width: 970px;
+    height: 467px;
+;
 `
 
 const Photo = styled.img`
