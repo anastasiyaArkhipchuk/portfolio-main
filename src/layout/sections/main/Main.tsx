@@ -9,12 +9,26 @@ export const Main = () => {
         <StyledMain>
             <RightMenu/>
             <LeftMenu/>
-            <MainMenu/>
-            <Services/>
+            <div>
+                <MainMenu/>
+                <Services/>
+            </div>
         </StyledMain>
     )
 }
 
 const StyledMain = styled.div`
+    display: flex;
+    :nth-child(1){
+        align-self: flex-end;
+    }
+    :nth-child(2){
+        align-self: flex-start;
+    }
+    div{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    gap: 30px;
 
 `
