@@ -60,7 +60,7 @@ const Conteiner = styled.div`
         flex-wrap: wrap;
         flex-direction: column;
     }
-  
+  gap: 30px;
 `
 const MainInfo = styled.div`
     display: grid;
