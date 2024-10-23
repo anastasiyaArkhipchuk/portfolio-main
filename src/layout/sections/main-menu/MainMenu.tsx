@@ -1,5 +1,6 @@
 import photo from "../../../assets/image/photo.webp";
 import styled from "styled-components";
+import {Photo} from "../../../components/Photo/Photo";
 
 export const MainMenu = () => {
     return (
@@ -13,7 +14,7 @@ export const MainMenu = () => {
                 </p>
                 <button>HIRE ME</button>
             </div>
-            <Photo src={photo}/>
+            <Photo width={"326"} height={"459"} src={photo}/>
         </StyledMainMenu>
     )
 }
@@ -26,11 +27,4 @@ const StyledMainMenu = styled.div`
     width: 970px;
     height: 467px;
 ;
-`
-
-const Photo = styled.img`
-    width: 326px;
-    height: 459px;
-    
-
 `

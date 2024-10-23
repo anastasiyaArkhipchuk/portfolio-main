@@ -1,11 +1,12 @@
 import photo from "../../../assets/image/photo.webp";
 import {Icon} from "../../../components/icon/Icon";
 import styled from "styled-components";
+import {Photo} from "../../../components/Photo/Photo";
 
 export const LeftMenu = () => {
     return (
         <StyledLeftMenu>
-        <Photo src={photo}/>
+        <Photo width={"100"} height={"150"} objectFit={"cover"} src={photo}/>
         <h4>Rayan Adlardard</h4>
         <span>Font-end Developer</span>
         <div>
@@ -86,16 +87,11 @@ const StyledLeftMenu = styled.div`
     background-color: bisque;
 `
 
-const Photo = styled.img`
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-`
-export const Columns = styled.div`
+ const Columns = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
 `
-export const Column = styled.div`
+const Column = styled.div`
     display: flex;
     flex-direction: column;
 `

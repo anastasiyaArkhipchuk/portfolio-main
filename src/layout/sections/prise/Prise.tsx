@@ -1,5 +1,4 @@
 import {Icon} from "../../../components/icon/Icon";
-import {Column, Columns} from "../left-menu/LeftMenu";
 import styled from "styled-components";
 
 export const Prise = () => {
@@ -117,4 +116,12 @@ const PrisePart = styled.div`
     width: 308px;
     height: 609px;
 
+`
+const Columns = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+`
+const Column = styled.div`
+    display: flex;
+    flex-direction: column;
 `
