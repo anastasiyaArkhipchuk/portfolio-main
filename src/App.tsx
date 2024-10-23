@@ -3,7 +3,6 @@ import {Prise} from "./layout/sections/prise/Prise";
 import {Education} from "./layout/sections/education/Education";
 import {WorkHistory} from "./layout/sections/work-history/WorkHistory";
 import {Blog} from "./layout/sections/blog/Blog";
-import {ContactInfo} from "./layout/sections/contact-information/ContactInfo";
 import {Portfolio} from "./layout/sections/portfolio/Portfolio";
 import {Recommendations} from "./layout/sections/recommendation/Recommendations";
 import {Footer} from "./layout/footer/Footer";
@@ -12,6 +11,10 @@ import {LeftMenu} from "./layout/sections/left-menu/LeftMenu";
 import {MainMenu} from "./layout/sections/main-menu/MainMenu";
 import {Services} from "./layout/sections/services/Services";
 import {RightMenu} from "./layout/sections/rightMenu/RightMenu";
+import {LeaveInfo} from "./layout/sections/leave-info/LeaveInfo";
+import {Map} from "./layout/sections/map/Map";
+import {Logo} from "./layout/sections/logo/Logo";
+import {ContactInformation} from "./layout/sections/contact-information/ContactInformation";
 
 function App() {
     return (
@@ -27,8 +30,13 @@ function App() {
                     <WorkHistory/>
                     <Portfolio/>
                     <Blog/>
-                    <ContactInfo/>
                     <Footer/>
+                    <Info>
+                        <LeaveInfo/>
+                        <ContactInformation/>
+                    </Info>
+                    <Map/>
+                    <Logo/>
                 </div>
                 <RightMenu/>
             </Conteiner>
@@ -53,6 +61,9 @@ const Conteiner = styled.div`
         flex-direction: column;
     }
     gap: 30px;
+`
+
+const Info = styled.div`
 `
 
 export default App;
