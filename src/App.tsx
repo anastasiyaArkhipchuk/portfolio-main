@@ -21,7 +21,7 @@ function App() {
         <Body>
             <Conteiner>
                 <LeftMenu/>
-                <div>
+                <MainInfo>
                     <MainMenu/>
                     <Services/>
                     <Prise/>
@@ -30,14 +30,14 @@ function App() {
                     <WorkHistory/>
                     <Portfolio/>
                     <Blog/>
-                    <Footer/>
                     <Info>
                         <LeaveInfo/>
                         <ContactInformation/>
                     </Info>
                     <Map/>
                     <Logo/>
-                </div>
+                    <Footer/>
+                </MainInfo>
                 <RightMenu/>
             </Conteiner>
         </Body>
@@ -62,8 +62,15 @@ const Conteiner = styled.div`
     }
     gap: 30px;
 `
-
+const MainInfo = styled.div`
+    display: grid;
+    gap: 70px;
+`
 const Info = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
 `
 
 export default App;
