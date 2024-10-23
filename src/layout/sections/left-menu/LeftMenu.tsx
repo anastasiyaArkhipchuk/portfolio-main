@@ -6,7 +6,7 @@ export const LeftMenu = () => {
     return (
         <StyledLeftMenu>
         <Photo src={photo}/>
-        <h3>Rayan Adlardard</h3>
+        <h4>Rayan Adlardard</h4>
         <span>Font-end Developer</span>
         <div>
             <Icon iconId={"facebookSvg"}/>
@@ -30,7 +30,7 @@ export const LeftMenu = () => {
                 <span>Dhaka,Bangladesh</span>
             </Column>
         </Columns>
-        <h3>Languages</h3>
+        <h4>Languages</h4>
         <Columns>
             <Column>
                 <span>Bangla</span>
@@ -43,7 +43,7 @@ export const LeftMenu = () => {
                 <span>60%</span>
             </Column>
         </Columns>
-        <h3>Languages</h3>
+        <h4>Languages</h4>
         <Columns>
             <Column>
                 <span>Html</span>
@@ -60,7 +60,7 @@ export const LeftMenu = () => {
                 <span>85%</span>
             </Column>
         </Columns>
-        <h3>Extra Skills</h3>
+        <h4>Extra Skills</h4>
         <Columns>
             <Column>
                 <Icon iconId={"iconsSvg"}/>
@@ -91,11 +91,11 @@ const Photo = styled.img`
     height: 150px;
     object-fit: cover;
 `
-const Columns = styled.div`
+export const Columns = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
 `
-const Column = styled.div`
+export const Column = styled.div`
     display: flex;
     flex-direction: column;
 `
