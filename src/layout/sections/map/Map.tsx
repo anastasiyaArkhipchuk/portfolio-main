@@ -1,5 +1,5 @@
 import photo from "../../../assets/image/map.webp";
-import {Photo} from "../../../components/Photo/Photo";
+import {Photo} from "../../../components/photo/Photo";
 
 export const Map = () => {
     return (

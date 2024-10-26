@@ -1,7 +1,7 @@
 import photo from "../../../assets/image/photo.webp";
 import {Icon} from "../../../components/icon/Icon";
 import styled from "styled-components";
-import {Photo} from "../../../components/Photo/Photo";
+import {Photo} from "../../../components/photo/Photo";
 
 export const LeftMenu = () => {
     return (

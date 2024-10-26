@@ -8,63 +8,50 @@ import {Recommendations} from "./layout/sections/recommendation/Recommendations"
 import {Footer} from "./layout/footer/Footer";
 import styled from "styled-components";
 import {LeftMenu} from "./layout/sections/left-menu/LeftMenu";
-import {MainMenu} from "./layout/sections/main-menu/MainMenu";
+import {Header} from "./layout/header/Header";
 import {Services} from "./layout/sections/services/Services";
-import {RightMenu} from "./layout/sections/rightMenu/RightMenu";
 import {LeaveInfo} from "./layout/sections/leave-info/LeaveInfo";
 import {Map} from "./layout/sections/map/Map";
 import {Logo} from "./layout/sections/logo/Logo";
 import {ContactInformation} from "./layout/sections/contact-information/ContactInformation";
+import {Navigation} from "./layout/sections/rightMenu/Navigation";
 
 function App() {
     return (
-        <Body>
-            <Conteiner>
-                <LeftMenu/>
-                <MainInfo>
-                    <MainMenu/>
-                    <Services/>
-                    <Prise/>
-                    <Recommendations/>
-                    <Education/>
-                    <WorkHistory/>
-                    <Portfolio/>
-                    <Blog/>
-                    <Info>
-                        <LeaveInfo/>
-                        <ContactInformation/>
-                    </Info>
-                    <Map/>
-                    <Logo/>
-                    <Footer/>
-                </MainInfo>
-                <RightMenu/>
-            </Conteiner>
-        </Body>
+        <Wrapper>
+            <LeftMenu/>
+            <MainInfo>
+                <Header/>
+                <Services/>
+                <Prise/>
+                <Recommendations/>
+                <Education/>
+                <WorkHistory/>
+                <Portfolio/>
+                <Blog/>
+                <Info>
+                    <LeaveInfo/>
+                    <ContactInformation/>
+                </Info>
+                <Map/>
+                <Logo/>
+                <Footer/>
+            </MainInfo>
+            <Navigation/>
+        </Wrapper>
     );
 }
 
-const Body = styled.div`
+const Wrapper = styled.div`
+    display: flex;
+`
+
+const MainInfo = styled.div`
     display: flex;
     flex-direction: column;
-`
-const Conteiner = styled.div`
-    display: flex;
-    :nth-child(1){
-        justify-content: flex-end;
-    }
-    :nth-child(2){
-        align-self: flex-start;
-    }
-    div{
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-  gap: 30px;
-`
-const MainInfo = styled.div`
-    display: grid;
+    align-items: center;
     gap: 70px;
+    flex-grow: 1;
 `
 const Info = styled.div`
     display: grid;

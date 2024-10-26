@@ -1,4 +1,4 @@
-import {Photo} from "../../../components/Photo/Photo";
+import {Photo} from "../../../components/photo/Photo";
 import photo1 from "../../../assets/image/portfolio9.webp";
 import photo2 from "../../../assets/image/portfolio8.webp";
 import photo3 from "../../../assets/image/portfolio7.webp";

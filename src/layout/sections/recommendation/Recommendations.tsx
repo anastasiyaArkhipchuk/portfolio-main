@@ -2,7 +2,7 @@ import {Icon} from "../../../components/icon/Icon";
 import recom1 from "../../../assets/image/recome3.webp";
 import recom2 from "../../../assets/image/recom2.webp";
 import recom3 from "../../../assets/image/recom1.webp";
-import {Photo} from "../../../components/Photo/Photo";
+import {Photo} from "../../../components/photo/Photo";
 import styled from "styled-components";
 
 export const Recommendations = () => {
