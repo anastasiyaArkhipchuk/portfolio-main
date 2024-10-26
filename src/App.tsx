@@ -12,9 +12,8 @@ import {Header} from "./layout/header/Header";
 import {Services} from "./layout/sections/services/Services";
 import {LeaveInfo} from "./layout/sections/leave-info/LeaveInfo";
 import {Map} from "./layout/sections/map/Map";
-import {Logo} from "./layout/sections/logo/Logo";
 import {ContactInformation} from "./layout/sections/contact-information/ContactInformation";
-import {Navigation} from "./layout/sections/rightMenu/Navigation";
+import {Navigation} from "./layout/sections/navigation/Navigation";
 
 function App() {
     return (
@@ -34,7 +33,6 @@ function App() {
                     <ContactInformation/>
                 </Info>
                 <Map/>
-                <Logo/>
                 <Footer/>
             </MainInfo>
             <Navigation/>
